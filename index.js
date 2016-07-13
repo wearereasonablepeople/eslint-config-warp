@@ -84,15 +84,15 @@ module.exports = {
     'prefer-arrow-callback': [2],
     'prefer-const': [2],
     'prefer-rest-params': [2],
-    'prefer-template': [2],
+    'prefer-template': [2]
 
     //Stylistic preferences.
-    'no-else-return': [],
-    'arrow-spacing': [],
-    'generator-star-spacing': [],
-    'rest-spread-spacing': [],
-    'template-curly-spacing': [],
-    'yield-star-spacing': []
+    // 'no-else-return': [],
+    // 'arrow-spacing': [],
+    // 'generator-star-spacing': [],
+    // 'rest-spread-spacing': [],
+    // 'template-curly-spacing': [],
+    // 'yield-star-spacing': []
 
   }
 
