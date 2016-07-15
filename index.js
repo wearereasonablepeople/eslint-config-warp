@@ -95,6 +95,7 @@ module.exports = {
     'computed-property-spacing': [2, 'never'],
     'key-spacing': [2, {beforeColon: false, afterColon: true, mode: 'minimum'}],
     'brace-style': [2, '1tbs', {allowSingleLine: true}]
+
   }
 
 }

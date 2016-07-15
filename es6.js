@@ -5,8 +5,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 6,
     ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-      jsx: true
+      experimentalObjectRestSpread: true
     }
   },
 
@@ -32,4 +31,5 @@ module.exports = {
     'rest-spread-spacing': [2, 'never'],
     'template-curly-spacing': [2, 'never']
   }
+
 }
