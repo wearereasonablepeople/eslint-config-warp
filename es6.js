@@ -27,6 +27,10 @@ module.exports = {
     'prefer-const': [2],
     'prefer-rest-params': [2],
     'prefer-template': [2],
-    'quotes': [2, 'single', {avoidEscape: true, allowTemplateLiterals: true}]
+    'quotes': [2, 'single', {avoidEscape: true, allowTemplateLiterals: true}],
+    'arrow-spacing': [2, {before: true, after: true}],
+    'generator-star-spacing',
+    'rest-spread-spacing': [2, 'never'],
+    'template-curly-spacing': [2, 'never'],
   }
 }
