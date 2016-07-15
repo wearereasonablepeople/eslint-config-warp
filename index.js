@@ -72,7 +72,7 @@ module.exports = {
     'no-unneeded-ternary': [2],
     'padded-blocks': [2],
     'quote-props': [2, 'consistent-as-needed'],
-    'quotes': [2, {avoidEscape: true, allowTemplateLiterals: false}],
+    'quotes': [2, 'single', {avoidEscape: true, allowTemplateLiterals: false}],
     'unicode-bom': [2, 'never'],
     'max-depth': [2, {max: 5}],
     'max-nested-callbacks': [2, {max: 5}],

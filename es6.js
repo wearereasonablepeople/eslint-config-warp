@@ -27,6 +27,6 @@ module.exports = {
     'prefer-const': [2],
     'prefer-rest-params': [2],
     'prefer-template': [2],
-    'quotes': [2, {avoidEscape: true, allowTemplateLiterals: true}]
+    'quotes': [2, 'single', {avoidEscape: true, allowTemplateLiterals: true}]
   }
 }
