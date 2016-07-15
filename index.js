@@ -70,7 +70,6 @@ module.exports = {
     'no-new-object': [2],
     'no-trailing-spaces': [2],
     'no-unneeded-ternary': [2],
-    'padded-blocks': [2],
     'quote-props': [2, 'consistent-as-needed'],
     'quotes': [2, 'single', {avoidEscape: true, allowTemplateLiterals: false}],
     'unicode-bom': [2, 'never'],
@@ -115,7 +114,8 @@ module.exports = {
     // 'generator-star-spacing',
     // 'rest-spread-spacing',
     // 'template-curly-spacing',
-    // 'yield-star-spacing'
+    // 'yield-star-spacing',
+    // 'padded-blocks'
 
   }
 
