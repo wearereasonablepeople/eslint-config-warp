@@ -47,7 +47,8 @@ Always [configure your environment](http://eslint.org/docs/user-guide/configurin
 
 * You can use `.eslintignore` to ignore paths.
 * You can override rules inside your `.eslintrc` file.
-* You can use `/*eslint rule:0 */` comments to override specific rules per file.
+* You can use `/*eslint rule:0*/` comments to override specific rules per file.
+* You can suppress eslint on a single line with `//eslint-disable-line`.
 * If you're confused: [RTFM](http://eslint.org/docs/user-guide/configuring).
 
 ## React JSX
