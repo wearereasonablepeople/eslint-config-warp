@@ -1,6 +1,6 @@
 module.exports = {
 
-  extends: './index',
+  extends: './index.js',
 
   parserOptions: {
     ecmaVersion: 6,

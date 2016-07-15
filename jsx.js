@@ -1,6 +1,6 @@
 module.exports = {
 
-  extends: ['./index', 'standard-react'],
+  extends: ['./index.js', 'standard-react'],
 
   parserOptions: {
     ecmaFeatures: {
