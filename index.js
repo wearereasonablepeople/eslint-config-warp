@@ -1,18 +1,5 @@
 module.exports = {
 
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-      jsx: true
-    }
-  },
-
-  env: {
-    es6: true
-  },
-
   extends: 'eslint:recommended',
 
   rules: {
@@ -68,23 +55,6 @@ module.exports = {
     'no-label-var': [2],
     'no-shadow-restricted-names': [2],
     'no-use-before-define': [2],
-    'global-require': [2],
-    'handle-callback-err': [2],
-    'no-mixed-requires': [2],
-    'no-new-require': [2],
-    'no-path-concat': [2],
-    'arrow-body-style': [2, 'as-needed'],
-    'arrow-parens': [2, 'as-needed'],
-    'constructor-super': [2],
-    'no-duplicate-imports': [2],
-    'no-useless-computed-key': [2],
-    'no-useless-constructor': [2],
-    'no-useless-rename': [2],
-    'no-var': [2],
-    'prefer-arrow-callback': [2],
-    'prefer-const': [2],
-    'prefer-rest-params': [2],
-    'prefer-template': [2]
 
     //Stylistic preferences.
     // 'no-else-return': [],
