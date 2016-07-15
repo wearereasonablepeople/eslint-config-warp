@@ -61,7 +61,7 @@ module.exports = {
     'func-style': [2],
     'indent': [2, 2],
     'linebreak-style': [2],
-    'max-len': [2, {code: 100, comments: 80}],
+    'max-len': [2, {code: 100}],
     'max-statements-per-line': [2, {max: 2}],
     'no-else-return': [2],
     'no-array-constructor': [2],
