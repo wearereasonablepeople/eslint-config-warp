@@ -29,7 +29,6 @@ module.exports = {
     'no-implied-eval': [2],
     'no-iterator': [2],
     'no-lone-blocks': [2],
-    'no-magic-numbers': [2, {ignore: [-1, 0, 1, 2], ignoreArrayIndexes: true}],
     'no-multi-spaces': [2],
     'no-multi-str': [2],
     'no-new-func': [2],
