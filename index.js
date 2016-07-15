@@ -77,7 +77,7 @@ module.exports = {
     'complexity': [2, {max: 12}],
 
     //Stylistic preferences.
-    'new-cap': [2],
+    'new-cap': [2, {newIsCap: true, capIsNew: false}],
     'newline-before-return': [2],
     'no-spaced-func': [2],
     'array-bracket-spacing': [2, 'never'],
