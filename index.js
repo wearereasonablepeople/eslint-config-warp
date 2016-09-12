@@ -58,7 +58,7 @@ module.exports = {
     'consistent-this': [2, 'self'],
     'eol-last': [2],
     'func-style': [2],
-    'indent': [2, 2],
+    'class-methods-use-this': [2],
     'linebreak-style': [2],
     'max-len': [2, {code: 100}],
     'max-statements-per-line': [2, {max: 2}],
@@ -77,8 +77,11 @@ module.exports = {
     'complexity': [2, {max: 12}],
 
     //Stylistic preferences.
+    'indent': [2, 2, {MemberExpression: 0, SwitchCase: 1}],
     'new-cap': [2, {newIsCap: true, capIsNew: false}],
     'newline-before-return': [2],
+    'line-comment-position': [2, {position: 'above'}],
+    'lines-around-directive': [2, 'always'],
     'no-spaced-func': [2],
     'array-bracket-spacing': [2, 'never'],
     'no-whitespace-before-property': [2],

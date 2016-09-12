@@ -25,9 +25,11 @@ module.exports = {
     'no-var': [2],
     'prefer-arrow-callback': [2],
     'prefer-const': [2],
+    'prefer-numeric-literals': [2],
     'prefer-rest-params': [2],
     'prefer-template': [2],
     'quotes': [2, 'single', {avoidEscape: true, allowTemplateLiterals: true}],
+    'symbol-description': [2],
     'arrow-spacing': [2, {before: true, after: true}],
     'rest-spread-spacing': [2, 'never'],
     'template-curly-spacing': [2, 'never']
