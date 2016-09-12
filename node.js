@@ -3,7 +3,7 @@ module.exports = {
   extends: './index.js',
 
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'script'
   },
 
   env: {
