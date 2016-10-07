@@ -79,7 +79,6 @@ module.exports = {
     //Stylistic preferences.
     'indent': [2, 2, {MemberExpression: 0, SwitchCase: 1}],
     'new-cap': [2, {newIsCap: true, capIsNew: false}],
-    'newline-before-return': [2],
     'line-comment-position': [2, {position: 'above'}],
     'lines-around-directive': [2, 'always'],
     'no-spaced-func': [2],
