@@ -53,6 +53,10 @@ module.exports = {
     'no-label-var': [2],
     'no-shadow-restricted-names': [2],
     'no-use-before-define': [2],
+    'func-name-matching': [2],
+    'no-useless-return': [2],
+    'nonblock-statement-body-position': [2, 'beside'],
+    'for-direction': [2],
 
     //Code quality.
     'consistent-this': [2, 'self'],
@@ -97,6 +101,18 @@ module.exports = {
     'computed-property-spacing': [2, 'never'],
     'key-spacing': [2, {beforeColon: false, afterColon: true, mode: 'minimum'}],
     'brace-style': [2, '1tbs', {allowSingleLine: true}]
+    'switch-colon-spacing': [2, {after: true, before: false}],
+    'array-bracket-newline': [2, {multiline: true}],
+    'array-element-newline': [2, {multiline: true}],
+    'semi-style': [2, 'last'],
+    'padding-line-between-statements': [2,
+      {blankline: 'always', prev: '*', next: 'function'},
+      {blankline: 'always', prev: 'function', next: '*'},
+      {blankline: 'always', prev: '*', next: 'multiline-block-like'},
+      {blankline: 'always', prev: 'multiline-block-like', next: '*'},
+      {blankline: 'always': prev: 'directive', next: '*'},
+      {blankline: 'never', prev: 'var', next: 'var'}
+    ]
 
   }
 

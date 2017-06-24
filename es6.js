@@ -4,7 +4,6 @@ module.exports = {
 
   parserOptions: {
     ecmaVersion: 6,
-    sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true
     }
@@ -32,7 +31,11 @@ module.exports = {
     'symbol-description': [2],
     'arrow-spacing': [2, {before: true, after: true}],
     'rest-spread-spacing': [2, 'never'],
-    'template-curly-spacing': [2, 'never']
+    'template-curly-spacing': [2, 'never'],
+    'no-return-await': [2],
+    'require-await': [2],
+    'no-await-in-loop': [2],
+    'prefer-promise-reject-errors': [2]
   }
 
 }
