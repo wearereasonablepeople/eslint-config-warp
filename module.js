@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 
   extends: './es6.js',
@@ -10,4 +12,4 @@ module.exports = {
     'func-name-matching': [2, {includeCommonJSModuleExports: true}]
   }
 
-}
+};

@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 
   extends: './index.js',
@@ -38,4 +40,4 @@ module.exports = {
     'prefer-promise-reject-errors': [2]
   }
 
-}
+};

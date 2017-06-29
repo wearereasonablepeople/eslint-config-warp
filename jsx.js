@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 
   extends: ['./index.js', 'standard-react'],
@@ -12,4 +14,4 @@ module.exports = {
     'jsx-quotes': [2, 'prefer-double']
   }
 
-}
+};

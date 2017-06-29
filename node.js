@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
 
   extends: './index.js',
@@ -19,4 +21,4 @@ module.exports = {
     'no-buffer-constructor': [2]
   }
 
-}
+};
