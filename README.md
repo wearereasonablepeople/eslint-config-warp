@@ -35,6 +35,14 @@ Always [configure your environment](http://eslint.org/docs/user-guide/configurin
 }
 ```
 
+**ES6 module**
+
+```json
+{
+  "extends": ["warp/module"]
+}
+```
+
 **Combining rulesets**
 
 ```json

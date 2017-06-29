@@ -16,7 +16,7 @@
     "url": "https://github.com/wearereasonablepeople/eslint-config-warp/issues"
   },
   "peerDependencies": {
-    "eslint": "^3.5.0"
+    "eslint": "4.x.x"
   },
   "homepage": "https://github.com/wearereasonablepeople/eslint-config-warp#readme"
 }
