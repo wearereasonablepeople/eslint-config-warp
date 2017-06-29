@@ -4,7 +4,7 @@
   "description": "WeAreReasonablePeople linting rules",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "eslint -c node.js .",
     "release": "npm outdated --long && xyz --edit --repo git@github.com:wearereasonablepeople/eslint-config-warp.git --tag 'X.Y.Z' --increment"
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/wearereasonablepeople/eslint-config-warp#readme",
   "devDependencies": {
-    "xyz": "^2.1.0"
+    "xyz": "^2.1.0",
+    "eslint": "4.x.x"
   }
 }
