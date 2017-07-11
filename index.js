@@ -104,15 +104,7 @@ module.exports = {
     'key-spacing': [2, {beforeColon: false, afterColon: true, mode: 'minimum'}],
     'brace-style': [2, '1tbs', {allowSingleLine: true}],
     'switch-colon-spacing': [2, {after: true, before: false}],
-    'semi-style': [2, 'last'],
-    'padding-line-between-statements': [2,
-      {blankLine: 'always', prev: '*', next: 'function'},
-      {blankLine: 'always', prev: 'function', next: '*'},
-      {blankLine: 'always', prev: '*', next: 'multiline-block-like'},
-      {blankLine: 'always', prev: 'multiline-block-like', next: '*'},
-      {blankLine: 'always', prev: 'directive', next: '*'},
-      {blankLine: 'never', prev: 'var', next: 'var'}
-    ]
+    'semi-style': [2, 'last']
 
   }
 
