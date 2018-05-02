@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/wearereasonablepeople/eslint-config-warp#readme",
   "devDependencies": {
-    "xyz": "^2.1.0",
-    "eslint": "4.x.x"
+    "eslint": "4.x.x",
+    "xyz": "^3.0.0"
   }
 }
