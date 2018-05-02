@@ -13,6 +13,7 @@ module.exports = {
   },
 
   rules: {
+    'no-sync': [1],
     'global-require': [2],
     'handle-callback-err': [2],
     'no-mixed-requires': [2],

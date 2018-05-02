@@ -10,7 +10,6 @@ module.exports = {
     'no-alert': [1],
     'no-console': [1],
     'no-warning-comments': [1, {terms: ['todo', 'tmp', 'temp', 'temporary', 'fixme']}],
-    'no-sync': [1],
 
     //Best practices.
     'no-prototype-builtins': [2],
