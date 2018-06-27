@@ -5,10 +5,7 @@ module.exports = {
   extends: './index.js',
 
   parserOptions: {
-    ecmaVersion: 6,
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true
-    }
+    ecmaVersion: 2018
   },
 
   env: {
