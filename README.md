@@ -21,6 +21,10 @@ Always [configure your environment](http://eslint.org/docs/user-guide/configurin
 
 **Inside NodeJS** (`"env":{"node":true}` is implied)
 
+```console
+$ npm install --save-dev eslint-plugin-node
+```
+
 ```json
 {
   "extends": ["warp/node"]
@@ -62,7 +66,7 @@ Always [configure your environment](http://eslint.org/docs/user-guide/configurin
 ## React JSX
 
 ```sh
-npm install --save-dev eslint-config-standard-react
+npm install --save-dev eslint-config-standard-react eslint-plugin-react
 ```
 
 ```json
