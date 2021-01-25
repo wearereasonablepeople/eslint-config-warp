@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "reason:maintenance"
+    commit-message:
+      prefix: ""
+    assignees:
+      - "Avaq"
+    reviewers:
+      - "Avaq"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "reason:maintenance"
+    commit-message:
+      prefix: ""
+    assignees:
+      - "Avaq"
+    reviewers:
+      - "Avaq"
