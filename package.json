@@ -4,7 +4,10 @@
   "description": "WeAreReasonablePeople linting rules",
   "main": "index.js",
   "scripts": {
-    "test": "eslint -c node.js .",
+    "test": "npm run lint:js && test/index.sh",
+    "lint": "npm run lint:sh && npm run lint:js",
+    "lint:js": "eslint -c node.js .",
+    "lint:sh": "shellcheck test/index.sh",
     "release": "npm outdated --long && xyz --edit --repo git@github.com:wearereasonablepeople/eslint-config-warp.git --tag 'X.Y.Z' --increment"
   },
   "repository": {
@@ -25,6 +28,7 @@
   "devDependencies": {
     "eslint": "^7.18.0",
     "eslint-config-standard-react": "^9.2.0",
+    "eslint-find-rules": "^3.6.1",
     "eslint-plugin-react": "^7.22.0",
     "xyz": "^4.0.0"
   }
