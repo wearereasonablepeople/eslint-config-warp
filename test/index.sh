@@ -12,10 +12,20 @@ for module in ./*.js; do
     ./node_modules/.bin/eslint-find-rules -d "$module" --no-error | tail -n +4 | parse_words
   )
 
+  readarray unused < <(
+    ./node_modules/.bin/eslint-find-rules -u "$module" --no-error | tail -n +4 | parse_words
+  )
+
   if [ ${#deprecated[@]} -gt 0 ]; then
     status=1
-    echo "The '$module' module sets deprecated rules:"
+    echo "[ERROR] The '$module' module sets deprecated rules:"
     echo " ${deprecated[*]/%/$'\n'}" | column
+    echo ''
+  fi
+
+  if [ ${#unused[@]} -gt 0 ]; then
+    echo "[WARNING] The '$module' module could define additional rules:"
+    echo " ${unused[*]/%/$'\n'}" | column
     echo ''
   fi
 done;
