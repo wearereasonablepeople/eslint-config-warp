@@ -7,6 +7,17 @@ on:
       - main
 
 jobs:
+  shellcheck:
+    name: Lint Shell Scripts
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2.3.4
+
+    - name: Run ShellCheck
+      uses: ludeeus/action-shellcheck@1.0.0
+
   test:
     name: Tests
     runs-on: ubuntu-latest
