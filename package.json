@@ -8,7 +8,7 @@
     "lint": "npm run lint:sh && npm run lint:js",
     "lint:js": "eslint -c node.js .",
     "lint:sh": "shellcheck test/index.sh",
-    "release": "npm outdated --long && xyz --edit --repo git@github.com:wearereasonablepeople/eslint-config-warp.git --tag 'X.Y.Z' --increment"
+    "release": "npm outdated --long && xyz --branch main --edit --repo git@github.com:wearereasonablepeople/eslint-config-warp.git --tag 'X.Y.Z' --increment"
   },
   "repository": {
     "type": "git",
