@@ -39,7 +39,7 @@ jobs:
       id: cache-node-modules
       with:
         path: node_modules
-        key: ${{ runner.OS }}-node${{ matrix.node-version }}-dependencies-${{ hashFiles('**/package-lock.json') }}
+        key: ${{ runner.OS }}-node${{ matrix.node-version }}-dependencies-${{ hashFiles('**/package.json') }}
 
     - name: Install Dependencies
       if: steps.cache-node-modules.outputs.cache-hit != 'true'
