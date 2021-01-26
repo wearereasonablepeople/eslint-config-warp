@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  shellcheck:
+    name: Lint Shell Scripts
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2.3.4
+
+    - name: Run ShellCheck
+      uses: ludeeus/action-shellcheck@1.0.0
+
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2.3.4
+
+    - name: Install NodeJS
+      uses: actions/setup-node@v2.1.2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Cache Node Modules
+      uses: actions/cache@v2
+      id: cache-node-modules
+      with:
+        path: node_modules
+        key: ${{ runner.OS }}-node${{ matrix.node-version }}-dependencies-${{ hashFiles('**/package-lock.json') }}
+
+    - name: Install Dependencies
+      if: steps.cache-node-modules.outputs.cache-hit != 'true'
+      run: npm install
+
+    - name: Run Tests
+      run: npm run test

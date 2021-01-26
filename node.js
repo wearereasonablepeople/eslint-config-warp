@@ -2,7 +2,9 @@
 
 module.exports = {
 
-  extends: './index.js',
+  extends: ['./index.js'],
+
+  plugins: ['node'],
 
   parserOptions: {
     sourceType: 'script'
@@ -13,13 +15,12 @@ module.exports = {
   },
 
   rules: {
-    'no-sync': [1],
-    'global-require': [2],
-    'handle-callback-err': [2],
-    'no-mixed-requires': [2],
-    'no-new-require': [2],
-    'no-path-concat': [2],
-    'no-buffer-constructor': [2]
+    'node/no-sync': [1],
+    'node/global-require': [2],
+    'node/handle-callback-err': [2],
+    'node/no-mixed-requires': [2],
+    'node/no-new-require': [2],
+    'node/no-path-concat': [2],
   }
 
 };
