@@ -74,3 +74,18 @@ npm install --save-dev eslint-config-standard-react eslint-plugin-react
   "extends": ["warp/jsx"]
 }
 ```
+
+## TypeScript
+
+```sh
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+```json
+{
+  "extends": ["warp/typescript"],
+  "parserOptions": {
+    "project": "YOUR.tsconfig.json"
+  }
+}
+```
