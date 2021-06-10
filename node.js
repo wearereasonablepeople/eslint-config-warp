@@ -2,8 +2,6 @@
 
 module.exports = {
 
-  extends: ['./index.js'],
-
   plugins: ['node'],
 
   parserOptions: {

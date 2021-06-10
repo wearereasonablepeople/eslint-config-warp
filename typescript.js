@@ -54,7 +54,7 @@ var extendedRules = Object.fromEntries(
 
 module.exports = {
 
-  extends: ['./index.js', 'plugin:@typescript-eslint/recommended'],
+  extends: ['plugin:@typescript-eslint/recommended'],
 
   parser: '@typescript-eslint/parser',
 
