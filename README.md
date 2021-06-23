@@ -10,48 +10,38 @@ Create a `.eslintrc.json` file in the project root containing the following:
 
 ```json
 {
-  "extends": ["warp"],
-  "env": {
-    "browser": true
-  }
+  "extends": ["warp"]
 }
 ```
 
 Always [configure your environment](http://eslint.org/docs/user-guide/configuring#specifying-environments).
+We recommend doing so by using the appropriate [preset](#presets):
 
-**Inside NodeJS** (`"env":{"node":true}` is implied)
+## Presets
 
-```console
-$ npm install --save-dev eslint-plugin-node
-```
+This package comes with some additional presets to include in your eslint
+configuration. To include any of them, just add them to the `extends` Array.
+Note that order is important, because each preset overrides the previous. To
+allow you to configure a working load order, the table below provides hints.
 
-```json
-{
-  "extends": ["warp/node"]
-}
-```
+Preset | Description | Load Order | Dependencies
+-------|-------------|------------|--------------
+`warp/node` | Linting rules for Node.JS | Soon after `warp` | `eslint-plugin-node`
+`warp/es6` | Linting rules for ES6 language features | Soon after `warp` |
+`warp/jsx` | Linting rules for React JSX | Soon after `warp` | `eslint-config-standard-react eslint-plugin-react`
+`warp/module` | Linting rules for modular JavaScript | Near the end |
+`warp/typescript` | Linting rules for TypeScript files | Near the end | `@typescript-eslint/eslint-plugin @typescript-eslint/parser`
 
-**With ES6 support** (`"env":{"es6":true}` is implied)
+## Example
 
-```json
-{
-  "extends": ["warp/es6"]
-}
-```
-
-**ES6 module**
+To set up your ESLint for linting TypeScript modules for Node.JS:
 
 ```json
 {
-  "extends": ["warp/module"]
-}
-```
-
-**Combining rulesets**
-
-```json
-{
-  "extends": ["warp/node", "warp/es6"]
+  "extends": ["warp", "warp/node", "warp/module", "warp/typescript"],
+  "parserOptions": {
+    "project": "YOUR.tsconfig.json"
+  }
 }
 ```
 
@@ -62,15 +52,3 @@ $ npm install --save-dev eslint-plugin-node
 * You can use `/*eslint rule:0*/` comments to override specific rules per file.
 * You can suppress eslint on a single line with `//eslint-disable-line`.
 * If you're confused: [RTFM](http://eslint.org/docs/user-guide/configuring).
-
-## React JSX
-
-```sh
-npm install --save-dev eslint-config-standard-react eslint-plugin-react
-```
-
-```json
-{
-  "extends": ["warp/jsx"]
-}
-```
