@@ -2,7 +2,7 @@
 
 var index = require('./index');
 
-// https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/README.md#extension-rules
+// https://git.io/JcBuy
 var extensionRules = [
   'brace-style',
   'comma-dangle',
@@ -41,9 +41,11 @@ var extensionRules = [
   'space-infix-ops',
 ];
 
+var has = Object.prototype.hasOwnProperty;
+
 var extendedRules = Object.fromEntries(
   extensionRules
-  .filter(function(name){ return index.rules.hasOwnProperty(name); })
+  .filter(function(name) { return has.call(index.rules, name); })
   .flatMap(function(name) {
     return [
       [name, ['off']],

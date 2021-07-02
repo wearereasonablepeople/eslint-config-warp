@@ -10,7 +10,7 @@ var presets = [
 ];
 
 module.exports = {
-  extends: presets.map(function(preset){
+  extends: presets.map(function(preset) {
     return '../' + preset + '.js';
   }),
 };
