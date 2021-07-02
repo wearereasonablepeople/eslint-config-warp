@@ -44,11 +44,3 @@ To set up your ESLint for linting TypeScript modules for Node.JS:
   }
 }
 ```
-
-## Overrides
-
-* You can use `.eslintignore` to ignore paths.
-* You can override rules inside your `.eslintrc` file.
-* You can use `/*eslint rule:0*/` comments to override specific rules per file.
-* You can suppress eslint on a single line with `//eslint-disable-line`.
-* If you're confused: [RTFM](http://eslint.org/docs/user-guide/configuring).
