@@ -14,6 +14,9 @@
     "type": "git",
     "url": "git+https://github.com/wearereasonablepeople/eslint-config-warp.git"
   },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "author": "WeAreReasonablePeople (http://wearereasonablepeople.nl/)",
   "license": "MIT",
   "bugs": {
