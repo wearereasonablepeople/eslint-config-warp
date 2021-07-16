@@ -3,11 +3,11 @@
 module.exports = {
 
   parserOptions: {
-    ecmaVersion: 2018
+    ecmaVersion: 2018,
   },
 
   env: {
-    es6: true
+    es6: true,
   },
 
   rules: {
@@ -32,7 +32,13 @@ module.exports = {
     'no-return-await': [2],
     'require-await': [2],
     'no-await-in-loop': [2],
-    'prefer-promise-reject-errors': [2]
-  }
+    'prefer-promise-reject-errors': [2],
+    'prefer-exponentiation-operator': [2],
+    'prefer-named-capture-group': [2],
+    'prefer-object-spread': [2],
+    'prefer-spread': [2],
+    'template-tag-spacing': [2, 'always'],
+    'yield-star-spacing': [2, 'both'],
+  },
 
 };

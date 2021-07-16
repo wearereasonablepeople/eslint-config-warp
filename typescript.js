@@ -45,11 +45,11 @@ var has = Object.prototype.hasOwnProperty;
 
 var extendedRules = Object.fromEntries(
   extensionRules
-  .filter(function(name) { return has.call(index.rules, name); })
-  .flatMap(function(name) {
+  .filter(function pred(name) { return has.call(index.rules, name); })
+  .flatMap(function transform(name) {
     return [
       [name, [0]],
-      ['@typescript-eslint/' + name, index.rules[name]]
+      ['@typescript-eslint/' + name, index.rules[name]],
     ];
   })
 );

@@ -7,7 +7,7 @@ module.exports = {
   plugins: ['import'],
 
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
   },
 
   rules: {
