@@ -8,12 +8,12 @@ module.exports = {
 
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
 
   rules: {
-    'jsx-quotes': [2, 'prefer-double']
-  }
+    'jsx-quotes': [2, 'prefer-double'],
+  },
 
 };

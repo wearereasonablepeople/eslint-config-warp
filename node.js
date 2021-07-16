@@ -5,11 +5,11 @@ module.exports = {
   plugins: ['node'],
 
   parserOptions: {
-    sourceType: 'script'
+    sourceType: 'script',
   },
 
   env: {
-    node: true
+    node: true,
   },
 
   rules: {

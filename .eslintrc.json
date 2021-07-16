@@ -1,4 +1,7 @@
 {
   "root": true,
-  "extends": ["./index.js", "./node.js"]
+  "extends": ["./index.js", "./node.js"],
+  "rules": {
+    "no-magic-numbers": [0]
+  }
 }
