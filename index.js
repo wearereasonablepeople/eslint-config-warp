@@ -82,13 +82,6 @@ module.exports = {
     'max-lines-per-function': [2, {max: 100}],
     'max-statements': [2, {max: 20}],
     'guard-for-in': [2],
-    'no-magic-numbers': [2, {
-      ignore: [0, 1],
-      ignoreDefaultValues: true,
-      ignoreArrayIndexes: true,
-      enforceConst: true,
-      detectObjects: true,
-    }],
     'no-loss-of-precision': [2],
     'no-return-assign': [2],
     'accessor-pairs': [2],
@@ -224,6 +217,7 @@ module.exports = {
     'sort-vars': [0],
     'wrap-regex': [0],
     'vars-on-top': [0],
+    'no-magic-numbers': [0],
 
     // Handled by the 'module' preset.
     'sort-imports': [0],
