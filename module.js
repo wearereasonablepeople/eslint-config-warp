@@ -18,6 +18,7 @@ module.exports = {
     'import/no-cycle': [2],
     'import/no-duplicates': [2],
     'import/no-self-import': [2],
+    'no-duplicate-imports': [2],
 
     // Best practices
     'import/export': [2],

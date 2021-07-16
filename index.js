@@ -113,6 +113,10 @@ module.exports = {
     'no-unsafe-optional-chaining': [2],
     'no-useless-backreference': [2],
     'require-unicode-regexp': [2],
+    'no-useless-constructor': [2],
+    'no-dupe-class-members': [2],
+    'no-redeclare': [2],
+    'require-await': [2],
 
     // Stylistic preferences.
     'indent': [2, 2, {MemberExpression: 0, SwitchCase: 1}],

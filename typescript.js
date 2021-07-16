@@ -99,6 +99,7 @@ module.exports = {
       '@typescript-eslint/strict-boolean-expressions': [2],
       '@typescript-eslint/switch-exhaustiveness-check': [2],
       '@typescript-eslint/unbound-method': [2],
+      '@typescript-eslint/no-duplicate-imports': [2],
 
       // Code quality
       '@typescript-eslint/ban-tslint-comment': [2],
