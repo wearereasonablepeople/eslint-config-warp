@@ -77,7 +77,6 @@ module.exports = {
     'max-depth': [2, {max: 5}],
     'max-nested-callbacks': [2, {max: 5}],
     'complexity': [2, {max: 12}],
-    'func-names': [2, 'as-needed'],
     'max-params': [2, {max: 5}],
     'max-lines-per-function': [2, {max: 100}],
     'max-statements': [2, {max: 20}],
@@ -218,6 +217,7 @@ module.exports = {
     'wrap-regex': [0],
     'vars-on-top': [0],
     'no-magic-numbers': [0],
+    'func-names': [0],
 
     // Handled by the 'module' preset.
     'sort-imports': [0],
