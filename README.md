@@ -26,6 +26,7 @@ allow you to configure a working load order, the table below provides hints.
 
 Preset | Description | Load Order | Dependencies
 -------|-------------|------------|--------------
+`warp` | Base JavaScript (ES5) linting rules | First |
 `warp/node` | Linting rules for Node.JS | Soon after `warp` | `eslint-plugin-node`
 `warp/es6` | Linting rules for ES6 language features | Soon after `warp` |
 `warp/jsx` | Linting rules for React JSX | Soon after `warp` | `eslint-config-standard-react eslint-plugin-react`
