@@ -21,6 +21,7 @@ module.exports = {
     'react/forbid-component-props': [0],
     'react/forbid-dom-props': [0],
     'react/forbid-elements': [0],
+    'react/forbid-foreign-prop-types': [0],
     'react/forbid-prop-types': [2],
     'react/function-component-definition': [2, {namedComponents: 'arrow-function'}],
     'react/jsx-boolean-value': [0],
