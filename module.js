@@ -42,7 +42,7 @@ module.exports = {
     'import/no-unassigned-import': [2],
     'import/order': [2, {
       groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'object'],
-      alphabetize: {order: 'asc'},
+      alphabetize: {order: 'asc', caseInsensitive: true},
     }],
 
     // Unused rules
