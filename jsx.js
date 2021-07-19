@@ -44,7 +44,7 @@ module.exports = {
     'react/jsx-no-literals': [0],
     'react/jsx-no-script-url': [0],
     'react/jsx-no-useless-fragment': [2, {allowExpressions: true}],
-    'react/jsx-one-expression-per-line': [2, {allow: 'single-child'}],
+    'react/jsx-one-expression-per-line': [0],
     'react/jsx-pascal-case': [2],
     'react/jsx-props-no-multi-spaces': [2],
     'react/jsx-props-no-spreading': [0],
