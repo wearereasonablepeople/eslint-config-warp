@@ -146,6 +146,9 @@ module.exports = {
       '@typescript-eslint/typedef': [0],
       '@typescript-eslint/consistent-type-imports': [0],
 
+      // Overrides
+      'import/extensions': [2, 'never'],
+      'node/no-unsupported-features/es-syntax': [0],
     }
   ),
 
