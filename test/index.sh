@@ -23,6 +23,7 @@ if [ ${#deprecated[@]} -gt 0 ]; then
 fi
 
 if [ ${#unused[@]} -gt 0 ]; then
+  status=1
   echo "[WARNING] Found additional rules to add:"
   echo " ${unused[*]}"
   echo ''
