@@ -109,6 +109,7 @@ module.exports = {
     'no-dupe-class-members': [2],
     'no-redeclare': [2],
     'require-await': [2],
+    'max-lines': [2, 400],
 
     // Stylistic preferences.
     'indent': [2, 2, {MemberExpression: 0, SwitchCase: 1}],
@@ -186,7 +187,6 @@ module.exports = {
     'id-length': [0],
     'id-match': [0],
     'max-classes-per-file': [0],
-    'max-lines': [0],
     'multiline-ternary': [0],
     'no-confusing-arrow': [0],
     'no-continue': [0],
