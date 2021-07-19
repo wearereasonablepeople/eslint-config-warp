@@ -97,7 +97,7 @@ module.exports = {
     'no-new': [2],
     'no-new-wrappers': [2],
     'no-nonoctal-decimal-escape': [2],
-    'no-plusplus': [2],
+    'no-plusplus': [2, {allowForLoopAfterthoughts: true}],
     'no-promise-executor-return': [2],
     'no-shadow': [2, {builtinGlobals: true}],
     'no-template-curly-in-string': [2],
