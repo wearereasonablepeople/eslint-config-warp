@@ -38,7 +38,7 @@ module.exports = {
     'react/jsx-indent': [2, 2, {checkAttributes: true, indentLogicalExpressions: true}],
     'react/jsx-indent-props': [2, 2],
     'react/jsx-max-depth': [0],
-    'react/jsx-max-props-per-line': [2],
+    'react/jsx-max-props-per-line': [0],
     'react/jsx-newline': [2, {prevent: true}],
     'react/jsx-no-constructed-context-values': [2],
     'react/jsx-no-literals': [0],
