@@ -174,7 +174,7 @@ module.exports = {
     'object-curly-newline': [2, {consistent: true, minProperties: 0}],
     'object-shorthand': [2, 'consistent-as-needed'],
     'one-var': [2, 'never'],
-    'operator-assignment': [2, 'always'],
+    'operator-assignment': [2, 'never'],
     'padded-blocks': [2, 'never'],
     'prefer-regex-literals': [2],
     'space-before-function-paren': [2, 'never'],
