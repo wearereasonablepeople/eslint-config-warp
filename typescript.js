@@ -106,7 +106,6 @@ module.exports = {
 
       // Code quality
       '@typescript-eslint/ban-tslint-comment': [2],
-      '@typescript-eslint/consistent-type-imports': [2],
       '@typescript-eslint/method-signature-style': [2],
       '@typescript-eslint/no-invalid-void-type': [2],
       '@typescript-eslint/no-unnecessary-boolean-literal-compare': [2],
@@ -145,6 +144,7 @@ module.exports = {
       '@typescript-eslint/return-await': [0],
       '@typescript-eslint/sort-type-union-intersection-members': [0],
       '@typescript-eslint/typedef': [0],
+      '@typescript-eslint/consistent-type-imports': [0],
 
     }
   ),
