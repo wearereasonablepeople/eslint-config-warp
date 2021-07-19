@@ -8,8 +8,8 @@ module.exports = {
 
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
 
   rules: {
@@ -21,6 +21,7 @@ module.exports = {
     'react/forbid-component-props': [0],
     'react/forbid-dom-props': [0],
     'react/forbid-elements': [0],
+    'react/forbid-foreign-prop-types': [0],
     'react/forbid-prop-types': [2],
     'react/function-component-definition': [2, {namedComponents: 'arrow-function'}],
     'react/jsx-boolean-value': [0],
@@ -58,7 +59,7 @@ module.exports = {
       arrow: 'parens-new-line',
       condition: 'parens-new-line',
       logical: 'parens-new-line',
-      prop: 'parens-new-line'
+      prop: 'parens-new-line',
     }],
     'react/no-access-state-in-setstate': [2],
     'react/no-adjacent-inline-elements': [0],
@@ -84,7 +85,7 @@ module.exports = {
     'react/state-in-constructor': [2],
     'react/static-property-placement': [0],
     'react/style-prop-object': [2],
-    'react/void-dom-elements-no-children': [2]
-  }
+    'react/void-dom-elements-no-children': [2],
+  },
 
 };

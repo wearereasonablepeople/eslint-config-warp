@@ -7,7 +7,7 @@ module.exports = {
   plugins: ['import'],
 
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
   },
 
   rules: {
@@ -18,6 +18,7 @@ module.exports = {
     'import/no-cycle': [2],
     'import/no-duplicates': [2],
     'import/no-self-import': [2],
+    'no-duplicate-imports': [2],
 
     // Best practices
     'import/export': [2],
@@ -31,6 +32,7 @@ module.exports = {
     'import/no-unused-modules': [2],
     'import/no-useless-path-segments': [2],
     'import/no-webpack-loader-syntax': [2],
+    'import/unambiguous': [2],
 
     // Style guide
     'import/extensions': [2, 'ignorePackages'],
@@ -40,7 +42,7 @@ module.exports = {
     'import/no-unassigned-import': [2],
     'import/order': [2, {
       groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'object'],
-      alphabetize: {order: 'asc'},
+      alphabetize: {order: 'asc', caseInsensitive: true},
     }],
 
     // Unused rules

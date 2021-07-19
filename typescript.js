@@ -45,11 +45,11 @@ var has = Object.prototype.hasOwnProperty;
 
 var extendedRules = Object.fromEntries(
   extensionRules
-  .filter(function(name) { return has.call(index.rules, name); })
-  .flatMap(function(name) {
+  .filter(function pred(name) { return has.call(index.rules, name); })
+  .flatMap(function transform(name) {
     return [
       [name, [0]],
-      ['@typescript-eslint/' + name, index.rules[name]]
+      ['@typescript-eslint/' + name, index.rules[name]],
     ];
   })
 );
@@ -72,7 +72,10 @@ module.exports = {
       '@typescript-eslint/consistent-type-assertions': [2],
       '@typescript-eslint/no-base-to-string': [2],
       '@typescript-eslint/no-confusing-non-null-assertion': [2],
-      '@typescript-eslint/no-confusing-void-expression': [2],
+      '@typescript-eslint/no-confusing-void-expression': [2, {
+        ignoreArrowShorthand: true,
+        ignoreVoidOperator: true,
+      }],
       '@typescript-eslint/no-dynamic-delete': [2],
       '@typescript-eslint/no-extraneous-class': [2],
       '@typescript-eslint/no-floating-promises': [2],
@@ -99,10 +102,10 @@ module.exports = {
       '@typescript-eslint/strict-boolean-expressions': [2],
       '@typescript-eslint/switch-exhaustiveness-check': [2],
       '@typescript-eslint/unbound-method': [2],
+      '@typescript-eslint/no-duplicate-imports': [2],
 
       // Code quality
       '@typescript-eslint/ban-tslint-comment': [2],
-      '@typescript-eslint/consistent-type-imports': [2],
       '@typescript-eslint/method-signature-style': [2],
       '@typescript-eslint/no-invalid-void-type': [2],
       '@typescript-eslint/no-unnecessary-boolean-literal-compare': [2],
@@ -141,7 +144,11 @@ module.exports = {
       '@typescript-eslint/return-await': [0],
       '@typescript-eslint/sort-type-union-intersection-members': [0],
       '@typescript-eslint/typedef': [0],
+      '@typescript-eslint/consistent-type-imports': [0],
 
+      // Overrides
+      'import/extensions': [2, 'never'],
+      'node/no-unsupported-features/es-syntax': [0],
     }
   ),
 
