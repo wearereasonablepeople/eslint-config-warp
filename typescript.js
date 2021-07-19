@@ -72,7 +72,10 @@ module.exports = {
       '@typescript-eslint/consistent-type-assertions': [2],
       '@typescript-eslint/no-base-to-string': [2],
       '@typescript-eslint/no-confusing-non-null-assertion': [2],
-      '@typescript-eslint/no-confusing-void-expression': [2],
+      '@typescript-eslint/no-confusing-void-expression': [2, {
+        ignoreArrowShorthand: true,
+        ignoreVoidOperator: true,
+      }],
       '@typescript-eslint/no-dynamic-delete': [2],
       '@typescript-eslint/no-extraneous-class': [2],
       '@typescript-eslint/no-floating-promises': [2],
