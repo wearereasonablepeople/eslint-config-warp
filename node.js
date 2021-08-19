@@ -27,7 +27,7 @@ module.exports = {
     'node/no-process-exit': [2],
     'node/no-sync': [2],
     'node/no-unsupported-features/es-builtins': [2],
-    'node/no-unsupported-features/es-syntax': [2],
+    'node/no-unsupported-features/es-syntax': [2, {ignores: ['modules']}],
     'node/no-unsupported-features/node-builtins': [2],
     'node/prefer-global/buffer': [2, 'always'],
     'node/prefer-global/console': [2, 'always'],
