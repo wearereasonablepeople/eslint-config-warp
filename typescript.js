@@ -92,6 +92,7 @@ module.exports = {
       '@typescript-eslint/prefer-nullish-coalescing': [2],
       '@typescript-eslint/prefer-optional-chain': [2],
       '@typescript-eslint/prefer-reduce-type-parameter': [2],
+      '@typescript-eslint/prefer-return-this-type': [2],
       '@typescript-eslint/prefer-string-starts-ends-with': [2],
       '@typescript-eslint/require-array-sort-compare': [2],
       '@typescript-eslint/restrict-plus-operands': [2],
