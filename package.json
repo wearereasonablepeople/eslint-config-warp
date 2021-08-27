@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-warp",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "description": "WeAreReasonablePeople linting rules",
   "main": "index.js",
   "scripts": {
