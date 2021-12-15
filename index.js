@@ -99,7 +99,7 @@ module.exports = {
     'no-nonoctal-decimal-escape': [2],
     'no-plusplus': [2, {allowForLoopAfterthoughts: true}],
     'no-promise-executor-return': [2],
-    'no-shadow': [2, {builtinGlobals: true}],
+    'no-shadow': [2],
     'no-template-curly-in-string': [2],
     'no-unreachable-loop': [2],
     'no-unsafe-optional-chaining': [2],
