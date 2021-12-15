@@ -218,6 +218,7 @@ module.exports = {
     'vars-on-top': [0],
     'no-magic-numbers': [0],
     'func-names': [0],
+    'no-empty-function': [0],
 
     // Handled by the 'module' preset.
     'sort-imports': [0],
