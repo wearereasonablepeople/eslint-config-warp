@@ -156,6 +156,7 @@ module.exports = {
       'import/namespace': [0],
       'node/no-unsupported-features/es-syntax': [0],
       '@typescript-eslint/explicit-module-boundary-types': [0],
+      '@typescript-eslint/no-redeclare': [0],
     }
   ),
 
