@@ -26,6 +26,7 @@ var extensionRules = [
   'no-loss-of-precision',
   'no-magic-numbers',
   'no-redeclare',
+  'no-restricted-imports',
   'no-shadow',
   'no-throw-literal',
   'no-unused-expressions',
@@ -33,6 +34,7 @@ var extensionRules = [
   'no-use-before-define',
   'no-useless-constructor',
   'object-curly-spacing',
+  'padding-line-between-statements',
   'quotes',
   'require-await',
   'return-await',
@@ -109,6 +111,8 @@ module.exports = {
       '@typescript-eslint/ban-tslint-comment': [2],
       '@typescript-eslint/method-signature-style': [2],
       '@typescript-eslint/no-invalid-void-type': [2],
+      '@typescript-eslint/no-meaningless-void-operator': [2],
+      '@typescript-eslint/no-non-null-asserted-nullish-coalescing': [2],
       '@typescript-eslint/no-unnecessary-boolean-literal-compare': [2],
       '@typescript-eslint/no-unnecessary-condition': [2],
       '@typescript-eslint/no-unnecessary-qualifier': [2],
@@ -149,7 +153,10 @@ module.exports = {
 
       // Overrides
       'import/extensions': [2, 'never'],
+      'import/namespace': [0],
       'node/no-unsupported-features/es-syntax': [0],
+      '@typescript-eslint/explicit-module-boundary-types': [0],
+      '@typescript-eslint/no-redeclare': [0],
     }
   ),
 

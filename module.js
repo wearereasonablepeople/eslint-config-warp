@@ -32,7 +32,6 @@ module.exports = {
     'import/no-unused-modules': [2],
     'import/no-useless-path-segments': [2],
     'import/no-webpack-loader-syntax': [2],
-    'import/unambiguous': [2],
 
     // Style guide
     'import/extensions': [2, 'ignorePackages'],
@@ -62,6 +61,7 @@ module.exports = {
     'import/no-relative-parent-imports': [0],
     'import/no-restricted-paths': [0],
     'import/prefer-default-export': [0],
+    'import/unambiguous': [0],
   },
 
 };

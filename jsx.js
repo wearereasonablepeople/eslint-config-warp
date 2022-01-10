@@ -86,6 +86,11 @@ module.exports = {
     'react/static-property-placement': [0],
     'react/style-prop-object': [2],
     'react/void-dom-elements-no-children': [2],
+    'react/no-arrow-function-lifecycle': [2],
+    'react/no-invalid-html-attribute': [2],
+    'react/no-namespace': [2],
+    'react/no-unused-class-component-methods': [2],
+    'react/prefer-exact-props': [2],
   },
 
 };
