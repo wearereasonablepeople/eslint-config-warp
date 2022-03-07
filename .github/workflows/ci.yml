@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v2.4.0
+      uses: actions/checkout@v3
 
     - name: Run ShellCheck
       uses: ludeeus/action-shellcheck@1.1.0
@@ -27,7 +27,7 @@ jobs:
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v2.4.0
+      uses: actions/checkout@v3
 
     - name: Install NodeJS
       uses: actions/setup-node@v3
