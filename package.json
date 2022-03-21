@@ -32,10 +32,10 @@
   },
   "homepage": "https://github.com/wearereasonablepeople/eslint-config-warp#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.26.1",
-    "@typescript-eslint/parser": "^4.26.1",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^8.10.0",
-    "eslint-config-standard-react": "^11.0.1",
+    "eslint-config-standard-react": "standard/eslint-config-standard-react#78895eeb0f29794552ed6146dcc1f5a79e768ce0",
     "eslint-find-rules": "^4.1.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
