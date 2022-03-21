@@ -42,6 +42,7 @@ module.exports = {
     'no-unmodified-loop-condition': [2],
     'no-unused-expressions': [2, {allowShortCircuit: true, allowTernary: true}],
     'no-unused-vars': [2, {argsIgnorePattern: '^_$'}],
+    'no-unused-private-class-members': [2],
     'no-useless-call': [2],
     'no-useless-concat': [2],
     'no-useless-escape': [2],
@@ -178,6 +179,7 @@ module.exports = {
     'operator-assignment': [2, 'never'],
     'padded-blocks': [2, 'never'],
     'prefer-regex-literals': [2],
+    'prefer-object-has-own': [2],
     'space-before-function-paren': [2, 'never'],
     'spaced-comment': [2, 'always'],
 

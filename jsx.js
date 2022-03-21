@@ -91,6 +91,8 @@ module.exports = {
     'react/no-namespace': [2],
     'react/no-unused-class-component-methods': [2],
     'react/prefer-exact-props': [2],
+    'react/hook-use-state': [2],
+    'react/iframe-missing-sandbox': [2],
   },
 
 };
