@@ -2,7 +2,7 @@
 
 module.exports = {
 
-  extends: ['plugin:react/recommended', 'standard-react'],
+  extends: ['plugin:react/recommended'],
 
   plugins: ['react'],
 
@@ -41,6 +41,11 @@ module.exports = {
     'react/jsx-max-depth': [0],
     'react/jsx-max-props-per-line': [0],
     'react/jsx-newline': [2, {prevent: true}],
+    'react/jsx-no-bind': [2, {
+      allowArrowFunctions: true,
+      allowBind: false,
+      ignoreRefs: true,
+    }],
     'react/jsx-no-constructed-context-values': [2],
     'react/jsx-no-literals': [0],
     'react/jsx-no-script-url': [0],
@@ -66,12 +71,14 @@ module.exports = {
     'react/no-array-index-key': [2],
     'react/no-danger': [2],
     'react/no-did-mount-set-state': [2],
+    'react/no-did-update-set-state': [2],
     'react/no-multi-comp': [2, {ignoreStateless: true}],
     'react/no-redundant-should-component-update': [2],
     'react/no-set-state': [0],
     'react/no-this-in-sfc': [2],
     'react/no-typos': [2],
     'react/no-unstable-nested-components': [2, {allowAsProps: true}],
+    'react/no-unused-prop-types': [2],
     'react/no-unused-state': [2],
     'react/no-will-update-set-state': [2],
     'react/prefer-es6-class': [2],
