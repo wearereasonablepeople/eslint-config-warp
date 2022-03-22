@@ -29,7 +29,7 @@ Preset | Description | Load Order | Dependencies
 `warp` | Base JavaScript (ES5) linting rules | First |
 `warp/node` | Linting rules for Node.JS | Soon after `warp` | `eslint-plugin-node`
 `warp/es6` | Linting rules for ES6 language features | Soon after `warp` |
-`warp/jsx` | Linting rules for React JSX | Soon after `warp` | `eslint-config-standard-react eslint-plugin-react`
+`warp/jsx` | Linting rules for React JSX | Soon after `warp` | `eslint-plugin-react`
 `warp/module` | Linting rules for modular JavaScript | Near the end | `eslint-plugin-import`
 `warp/typescript` | Linting rules for TypeScript files; implies `warp/module` | Near the end | `eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser`
 
