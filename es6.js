@@ -39,6 +39,10 @@ module.exports = {
     'prefer-spread': [2],
     'template-tag-spacing': [2, 'always'],
     'yield-star-spacing': [2, 'both'],
+    'logical-assignment-operators': [2, 'never'],
+    'no-constant-binary-expression': [2],
+    'no-empty-static-block': [2],
+    'no-new-native-nonconstructor': [2],
   },
 
 };
