@@ -99,6 +99,9 @@ module.exports = {
     'react/prefer-exact-props': [2],
     'react/hook-use-state': [2],
     'react/iframe-missing-sandbox': [2],
+    'react/jsx-no-leaked-render': [2],
+    'react/no-object-type-as-default-prop': [2],
+    'react/sort-default-props': [0],
   },
 
 };
