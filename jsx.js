@@ -54,7 +54,6 @@ module.exports = {
     'react/jsx-pascal-case': [2],
     'react/jsx-props-no-multi-spaces': [2],
     'react/jsx-props-no-spreading': [0],
-    'react/jsx-sort-default-props': [0],
     'react/jsx-sort-props': [0],
     'react/jsx-tag-spacing': [2, {beforeClosing: 'never'}],
     'react/jsx-wrap-multilines': [2, {
