@@ -7,11 +7,11 @@ module.exports = {
   rules: {
 
     // Warnings.
-    'no-alert': [1],
-    'no-console': [1],
     'no-warning-comments': [1, {terms: ['todo', 'tmp', 'temp', 'temporary', 'fixme']}],
 
     // Best practices.
+    'no-alert': [2],
+    'no-console': [2],
     'no-prototype-builtins': [2],
     'array-callback-return': [2],
     'consistent-return': [2],
