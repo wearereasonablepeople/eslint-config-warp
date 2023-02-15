@@ -42,6 +42,7 @@ var extensionRules = [
   'space-before-blocks',
   'space-before-function-paren',
   'space-infix-ops',
+  'key-spacing',
 ];
 
 var has = Object.prototype.hasOwnProperty;
@@ -102,7 +103,8 @@ module.exports = {
       '@typescript-eslint/strict-boolean-expressions': [2],
       '@typescript-eslint/switch-exhaustiveness-check': [2],
       '@typescript-eslint/unbound-method': [2],
-      '@typescript-eslint/no-duplicate-imports': [2],
+      '@typescript-eslint/no-duplicate-enum-values': [2],
+      '@typescript-eslint/no-unsafe-declaration-merging': [2],
 
       // Code quality
       '@typescript-eslint/ban-tslint-comment': [2],
@@ -121,6 +123,7 @@ module.exports = {
       '@typescript-eslint/prefer-function-type': [2],
       '@typescript-eslint/prefer-ts-expect-error': [2],
       '@typescript-eslint/unified-signatures': [2],
+      '@typescript-eslint/sort-type-constituents': [2],
 
       // Stylistic preferences
       '@typescript-eslint/type-annotation-spacing': [2],
@@ -138,7 +141,6 @@ module.exports = {
       '@typescript-eslint/member-delimiter-style': [0],
       '@typescript-eslint/member-ordering': [0],
       '@typescript-eslint/naming-convention': [0],
-      '@typescript-eslint/no-parameter-properties': [0],
       '@typescript-eslint/no-redeclare': [0],
       '@typescript-eslint/no-type-alias': [0],
       '@typescript-eslint/no-unsafe-argument': [0],
@@ -153,8 +155,9 @@ module.exports = {
       '@typescript-eslint/prefer-regexp-exec': [0],
       '@typescript-eslint/promise-function-async': [0],
       '@typescript-eslint/return-await': [0],
-      '@typescript-eslint/sort-type-union-intersection-members': [0],
       '@typescript-eslint/typedef': [0],
+      '@typescript-eslint/consistent-generic-constructors': [0],
+      '@typescript-eslint/parameter-properties': [0],
 
       // Overrides
       'import/extensions': [2, 'never'],

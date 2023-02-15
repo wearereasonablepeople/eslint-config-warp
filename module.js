@@ -43,6 +43,8 @@ module.exports = {
       groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'object'],
       alphabetize: {order: 'asc', caseInsensitive: true},
     }],
+    'import/consistent-type-specifier-style': [2, 'prefer-inline'],
+    'import/no-empty-named-blocks': [2],
 
     // Unused rules
     'import/dynamic-import-chunkname': [0],
