@@ -182,6 +182,7 @@ module.exports = {
     'prefer-object-has-own': [2],
     'space-before-function-paren': [2, 'never'],
     'spaced-comment': [2, 'always'],
+    'no-extra-semi': [2],
 
     // Unused rules.
     'block-scoped-var': [0],
