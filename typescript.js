@@ -2,9 +2,11 @@
 
 var index = require('./index');
 
-// https://git.io/JcBuy
+// https://typescript-eslint.io/rules/adjacent-overload-signatures/
 var extensionRules = [
+  'block-spacing',
   'brace-style',
+  'class-methods-use-this',
   'comma-dangle',
   'comma-spacing',
   'default-param-last',
@@ -13,10 +15,10 @@ var extensionRules = [
   'indent',
   'init-declarations',
   'keyword-spacing',
+  'lines-around-comment',
   'lines-between-class-members',
   'no-array-constructor',
   'no-dupe-class-members',
-  'no-duplicate-imports',
   'no-empty-function',
   'no-extra-parens',
   'no-extra-semi',
@@ -37,7 +39,6 @@ var extensionRules = [
   'padding-line-between-statements',
   'quotes',
   'require-await',
-  'return-await',
   'semi',
   'space-before-blocks',
   'space-before-function-paren',
@@ -47,13 +48,17 @@ var extensionRules = [
 
 var has = Object.prototype.hasOwnProperty;
 
+var clone = function clone(obj) {
+  return JSON.parse(JSON.stringify(obj));
+};
+
 var extendedRules = Object.fromEntries(
   extensionRules
   .filter(function pred(name) { return has.call(index.rules, name); })
   .flatMap(function transform(name) {
     return [
       [name, [0]],
-      ['@typescript-eslint/' + name, index.rules[name]],
+      ['@typescript-eslint/' + name, clone(index.rules[name])],
     ];
   })
 );
@@ -105,6 +110,10 @@ module.exports = {
       '@typescript-eslint/unbound-method': [2],
       '@typescript-eslint/no-duplicate-enum-values': [2],
       '@typescript-eslint/no-unsafe-declaration-merging': [2],
+      '@typescript-eslint/no-duplicate-type-constituents': [2],
+      '@typescript-eslint/no-import-type-side-effects': [2],
+      '@typescript-eslint/no-mixed-enums': [2],
+      '@typescript-eslint/no-unsafe-enum-comparison': [2],
 
       // Code quality
       '@typescript-eslint/ban-tslint-comment': [2],
@@ -127,22 +136,27 @@ module.exports = {
 
       // Stylistic preferences
       '@typescript-eslint/type-annotation-spacing': [2],
+      '@typescript-eslint/adjacent-overload-signatures': [2],
+      '@typescript-eslint/no-inferrable-types': [2],
+      '@typescript-eslint/consistent-type-definitions': [2, 'type'],
+      '@typescript-eslint/member-delimiter-style': [2, {
+        multiline: {delimiter: 'comma', requireLast: false},
+        singleline: {delimiter: 'comma', requireLast: false},
+        multilineDetection: 'brackets',
+      }],
 
       // Unused rules
       '@typescript-eslint/array-type': [0],
       '@typescript-eslint/class-literal-property-style': [0],
       '@typescript-eslint/consistent-indexed-object-style': [0],
-      '@typescript-eslint/consistent-type-definitions': [0],
       '@typescript-eslint/consistent-type-exports': [0],
       '@typescript-eslint/consistent-type-imports': [0],
       '@typescript-eslint/explicit-function-return-type': [0],
       '@typescript-eslint/explicit-member-accessibility': [0],
       '@typescript-eslint/explicit-module-boundary-types': [0],
-      '@typescript-eslint/member-delimiter-style': [0],
       '@typescript-eslint/member-ordering': [0],
       '@typescript-eslint/naming-convention': [0],
       '@typescript-eslint/no-redeclare': [0],
-      '@typescript-eslint/no-type-alias': [0],
       '@typescript-eslint/no-unsafe-argument': [0],
       '@typescript-eslint/no-unsafe-assignment': [0],
       '@typescript-eslint/no-unsafe-call': [0],
@@ -158,6 +172,9 @@ module.exports = {
       '@typescript-eslint/typedef': [0],
       '@typescript-eslint/consistent-generic-constructors': [0],
       '@typescript-eslint/parameter-properties': [0],
+      '@typescript-eslint/no-empty-interface': [0],
+      '@typescript-eslint/no-non-null-assertion': [0],
+      '@typescript-eslint/prefer-namespace-keyword': [0],
 
       // Overrides
       'import/extensions': [2, 'never'],
